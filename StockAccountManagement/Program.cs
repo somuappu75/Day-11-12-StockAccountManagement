@@ -11,9 +11,9 @@ namespace StockAccountManagement
         static void Main(string[] args)
         {
             //
-            //Creating obj for StockManager
+            //Creating obj for StockManagement 
             StockManagement stockManagement = new StockManagement();
-            //getting path of json file
+            //getting path of json file to load data
             string file = @"D:\VisualStudio\repos\StockAccountManagement\StockAccountManagement\stock.json";
             //DeserializeO Json file
             StockSupport stockSupport = JsonConvert.DeserializeObject<StockSupport>(File.ReadAllText(file));
